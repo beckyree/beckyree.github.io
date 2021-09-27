@@ -1,0 +1,53 @@
+@font-face {
+	font-family: 'Jua';
+	src: url(Jua-Regular.ttf);
+}
+
+body {
+	background-color: #335C67;
+	font-family: 'Jua';
+	font-size: 20px;
+	text-align: center;
+	color: #540B0E;
+}
+
+.container {
+	display: flex;
+}
+
+.container div {
+	height: 1000px;
+	width: 1440px;
+	border-radius: 40px;
+    background-color: white;
+    align-content: left;
+}
+
+.container sectionyellow {
+	height: 1000px;
+	width: 1440px;
+	border-radius: 40px;
+	background-color: #FFE9BE;
+}
+
+.nav {
+	padding: 15px;
+	text-align: left;
+	font-size: 15px;
+	color: #540B0E;
+}
+
+.EngHead {
+	text-align: left;
+	padding-left: 40px;
+	font-size: 40px;
+	color: #9E2A2B;
+	
+}
+
+.KorHead {
+	text-align: left;
+	padding-left: 40px;
+	font-size: 40px;
+	color: #E09F3E;
+}

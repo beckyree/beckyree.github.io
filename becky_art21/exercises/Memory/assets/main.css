@@ -1,0 +1,36 @@
+@font-face {
+	font-family: 'Gloria_Hallelujah';
+	src: url('GloriaHallelujah-Regular.ttf');
+}
+
+body {
+	font-family: 'Gloria_Hallelujah';
+	padding: 50px;
+	color: navy;
+	font-size: 20px;
+}
+
+
+h1 {
+	font-family: 'Gloria_Hallelujah';
+	color: navy;
+}
+
+.linkcontainer {
+  position: absolute;
+  top: 420px;
+  right: 350px;
+}
+
+/* Bottom right text */
+.linktext {
+	font-size: 40px;
+	font-family: 'Gloria_Hallelujah';
+	color: black;
+	position: absolute;
+	bottom: 0px;
+	right: 3px;
+}
+.signoff {
+	text-align: right;
+}
