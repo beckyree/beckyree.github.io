@@ -1,0 +1,103 @@
+@font-face {
+	font-family: 'Robotobig';
+	src: url('fonts/Roboto-Black.ttf');
+}
+
+@font-face {
+	font-family: 'Robotosmall';
+	src: url('fonts/RobotoCondensed-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Robotoit';
+	src: url('fonts/Roboto-BoldItalic.ttf');
+}
+
+h1 {
+	font-family: Robotobig;
+	font-size: 50px;
+	text-align: center;
+	color: black;
+}
+
+h2 {
+	font-family: Robotobig;
+	font-size: 30px;
+	text-align: center;
+}
+
+h3 {
+	color: black;
+	font-family: Robotoit;
+	font-size: 25px;
+}
+
+h6 {
+	text-align: center;
+	font-family: Robotosmall;
+}
+
+.intro {
+	display: flex;
+	font-family: Robotosmall;
+	flex-direction: column;
+}
+
+.timeline {
+	position: relative;
+	max-width: 1400px;
+	margin: 0 auto;
+	
+}
+
+.timeline::after {
+	content: '';
+	position: absolute;
+	width: 4px;
+	background-color: black;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	margin-left: -3px;
+}
+
+.content {
+	padding: 10px 40px;
+	position: relative;
+	width: 45%;
+	font-family: Robotosmall;
+	font-size: 15px;
+}
+
+.content::after {
+	content: '';
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	right: -17px;
+	background-color: white;
+	border: 5px solid black;
+	top: 15px;
+	border-radius: 50%;
+	z-index: 1;
+}
+
+.left {
+	left: 0;
+}
+
+.right {
+	left: 50%;
+}
+
+.right::after {
+	left: -18px;
+}
+
+.left::after, .right::after {
+	right: -6px;
+}
+
+.switch {
+	cursor: url('clickherecur3.png'), url('clickherecur2.cur'), auto;
+}

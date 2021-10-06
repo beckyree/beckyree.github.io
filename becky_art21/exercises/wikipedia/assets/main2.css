@@ -1,0 +1,128 @@
+@font-face {
+	font-family: 'Robotobig';
+	src: url('fonts/BADABB__.TTF');
+}
+
+@font-face {
+	font-family: 'Kalam';
+	src: url('fonts/Kalam-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'KalamB';
+	src: url('fonts/Kalam-Bold.ttf');
+}
+
+@font-face {
+	font-family: 'Robotoit';
+	src: url('fonts/Roboto-BoldItalic.ttf');
+}
+
+body {
+	font-family: Kalam;
+	background-color: lightyellow;
+	color: black;
+}
+
+.intro {
+	font-family: Kalam;
+}
+
+h1 {
+	font-family: Robotobig;
+	font-size: 205px;
+	color: whitesmoke;
+}
+
+h2 {
+	overflow: hidden;
+	text-align: center;
+	font-family: Robotobig;
+	font-size: 40px;
+}
+
+h2::before, h2::after {
+	background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 5px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+h2:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+h2:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+
+h3 {
+	color: white;
+	font-family: Robotoit;
+	font-size: 30px;
+	box-shadow: blue;
+}
+
+h6 {
+	text-align: center;
+	font-family: KalamB;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	margin: 0 10px 10px 20px;
+}
+.titlecontain {
+	display: flex;
+	background-color: orangered;
+	justify-content: center;
+	border-radius: 20px;
+}
+
+.boldtext {
+	font-family: Robotobig;
+	font-size: 30px;
+}
+
+.arrange {
+	flex-direction: column;
+}
+
+.left {
+	flex-direction: row;
+
+}
+
+.left2 {
+	padding: 15px;
+	background-color: white;
+	border: medium solid black;
+	border-radius: 20px;
+}
+
+.right {
+	flex-direction: row;
+}
+
+.right2 {
+	padding: 15px;
+	background-color: white;
+	border: medium solid black;
+	border-radius: 20px;
+}
+
+.switch {
+	text-align: center;
+	cursor: url('clickherecur3.png'), url('clickherecur2.cur'), auto;
+}
+
+.highlight {
+	background-color: orangered;
+}

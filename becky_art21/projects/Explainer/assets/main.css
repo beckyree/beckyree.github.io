@@ -11,11 +11,9 @@ body {
 	color: #540B0E;
 }
 
-.chopcursor {
-	cursor: url(../assets/chopcursor.png), auto;
-	width: 250px;
-	height: 250px;
-}
+/*.chopcursor {
+	cursor: url(../assets/chopcursor2.png), auto;
+}*/
 
 .nav {
 	display: flex;
