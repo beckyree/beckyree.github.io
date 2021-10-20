@@ -1,0 +1,659 @@
+body {
+	background-color: lightcoral;
+}
+
+/*.container {
+	display: flex;
+}
+
+.container .shapecol1 {
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+}*/
+
+@keyframes firstright {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes secleft {
+  0% {
+    transform: rotate(0.5turn);
+  }
+  100% {
+    transform: rotate(1.5turn);
+  }
+}
+
+@keyframes hov {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+#circle1 {
+	position: absolute;
+	top   : 0;
+	left  : 0;
+	opacity: 75%;
+
+	animation: firstright 4s linear infinite;
+
+    height: 250px;
+    width: 250px;
+    background-color: pink;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#circle1:hover {
+    background-color: ghostwhite;
+    border-radius: 50%;
+    box-shadow: 
+    	/*inset 0 0 50px #fff,       inner white 
+	    inset 20px 0 80px #f0f,    inner left magenta short 
+	    inset -20px 0 80px #0ff,   inner right cyan short 
+	    inset 20px 0 300px #f0f,   inner left magenta broad 
+	    inset -20px 0 300px #0ff,  inner right cyan broad 
+	    0 0 50px #fff,             outer white 
+	    -10px 0 80px #f0f,         outer left magenta 
+	    10px 0 80px #0ff;*/
+	    inset 0 0 50px aliceblue,
+	    inset 20px 0 80px coral,
+	    inset -20px 0 80px crimson,
+	    inset 20px 0 300px coral,
+	    inset -20px 0 300px crimson,
+	    0 0 50px aliceblue,
+	    -10px 0 80px skyblue,
+	    10px 0 80px skyblue;
+    display: inline-block;
+	animation:  hov 0.5s ease-in-out infinite alternate;
+	cursor: pointer;
+}
+
+
+#circle2 {
+	position: absolute;
+	top   : 32%;
+	left  : 0;
+	opacity: 75%;
+
+	animation: secleft 4s linear infinite;
+    height: 250px;
+    width: 250px;
+    background-color: lightskyblue;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#circle2:hover {
+	animation: firstright 4s linear infinite;
+
+    background-color: ghostwhite;
+    border-radius: 50%;
+    box-shadow: 
+    	inset 0 0 50px coral,
+	    inset 20px 0 80px deepskyblue,
+	    inset -20px 0 80px blue,
+	    inset 20px 0 300px deepskyblue,
+	    inset -20px 0 300px blue,
+	    0 0 50px coral,
+	    -10px 0 80px crimson,
+	    10px 0 80px crimson;
+    display: inline-block;
+
+	animation:  hov 0.5s ease-in-out infinite alternate;
+	cursor: pointer;
+}
+
+#circle3 {
+	position: absolute;
+	left  : 0;
+	bottom: 0;
+	opacity: 75%;
+
+	animation: firstright 4s linear infinite;
+    height: 250px;
+    width: 250px;
+    background-color: pink;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#circle3:hover {
+	animation: firstright 4s linear infinite;
+
+    background-color: ghostwhite;
+    border-radius: 50%;
+    box-shadow: 
+    	inset 0 0 50px aliceblue,
+	    inset 20px 0 80px coral,
+	    inset -20px 0 80px crimson,
+	    inset 20px 0 300px coral,
+	    inset -20px 0 300px crimson,
+	    0 0 50px aliceblue,
+	    -10px 0 80px skyblue,
+	    10px 0 80px skyblue;
+    display: inline-block;
+
+	animation:  hov 0.5s ease-in-out infinite alternate;
+	cursor: pointer;
+}
+
+#circle4 {
+	position: absolute;
+	left  : 17%;
+	top: 0;
+	opacity: 75%;
+
+	animation: secleft 4s linear infinite;
+    height: 250px;
+    width: 250px;
+    background-color: lightskyblue;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#circle4:hover {
+	animation: firstright 4s linear infinite;
+
+    background-color: ghostwhite;
+    border-radius: 50%;
+    box-shadow: 
+    	inset 0 0 50px coral,
+	    inset 20px 0 80px deepskyblue,
+	    inset -20px 0 80px blue,
+	    inset 20px 0 300px deepskyblue,
+	    inset -20px 0 300px blue,
+	    0 0 50px coral,
+	    -10px 0 80px crimson,
+	    10px 0 80px crimson;
+    display: inline-block;
+
+	animation:  hov 0.5s ease-in-out infinite alternate;
+	cursor: pointer;
+}
+
+#circle5 {
+	position: absolute;
+	top   : 32%;
+	left: 17%;
+	opacity: 75%;
+
+	animation: firstright 4s linear infinite;
+    height: 250px;
+    width: 250px;
+    background-color: pink;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#circle5:hover {
+	animation: firstright 4s linear infinite;
+
+    background-color: ghostwhite;
+    border-radius: 50%;
+    box-shadow: 
+    	inset 0 0 50px aliceblue,
+	    inset 20px 0 80px coral,
+	    inset -20px 0 80px crimson,
+	    inset 20px 0 300px coral,
+	    inset -20px 0 300px crimson,
+	    0 0 50px aliceblue,
+	    -10px 0 80px skyblue,
+	    10px 0 80px skyblue;
+    display: inline-block;
+
+	animation:  hov 0.5s ease-in-out infinite alternate;
+	cursor: pointer;
+}
+
+#circle6 {
+	position: absolute;
+	left  : 17%;
+	bottom: 0;
+	opacity: 75%;
+
+	animation: secleft 4s linear infinite;
+    height: 250px;
+    width: 250px;
+    background-color: lightskyblue;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#circle6:hover {
+	animation: firstright 4s linear infinite;
+
+    background-color: ghostwhite;
+    border-radius: 50%;
+    box-shadow: 
+    	inset 0 0 50px coral,
+	    inset 20px 0 80px deepskyblue,
+	    inset -20px 0 80px blue,
+	    inset 20px 0 300px deepskyblue,
+	    inset -20px 0 300px blue,
+	    0 0 50px coral,
+	    -10px 0 80px crimson,
+	    10px 0 80px crimson;
+    display: inline-block;
+
+	animation:  hov 0.5s ease-in-out infinite alternate;
+	cursor: pointer;
+}
+
+#circle7 {
+	position: absolute;
+	left  : 33%;
+	top: 0;
+	opacity: 75%;
+
+	animation: firstright 4s linear infinite;
+    height: 250px;
+    width: 250px;
+    background-color: pink;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#circle7:hover {
+	animation: firstright 4s linear infinite;
+
+    background-color: ghostwhite;
+    border-radius: 50%;
+    box-shadow: 
+    	inset 0 0 50px aliceblue,
+	    inset 20px 0 80px coral,
+	    inset -20px 0 80px crimson,
+	    inset 20px 0 300px coral,
+	    inset -20px 0 300px crimson,
+	    0 0 50px aliceblue,
+	    -10px 0 80px skyblue,
+	    10px 0 80px skyblue;
+    display: inline-block;
+
+	animation:  hov 0.5s ease-in-out infinite alternate;
+	cursor: pointer;
+}
+
+#circle8 {
+	position: absolute;
+	top   : 32%;
+	left: 33%;
+	opacity: 75%;
+
+	animation: secleft 4s linear infinite;
+    height: 250px;
+    width: 250px;
+    background-color: lightskyblue;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#circle8:hover {
+	animation: firstright 4s linear infinite;
+
+    background-color: ghostwhite;
+    border-radius: 50%;
+    box-shadow: 
+    	inset 0 0 50px coral,
+	    inset 20px 0 80px deepskyblue,
+	    inset -20px 0 80px blue,
+	    inset 20px 0 300px deepskyblue,
+	    inset -20px 0 300px blue,
+	    0 0 50px coral,
+	    -10px 0 80px crimson,
+	    10px 0 80px crimson;
+    display: inline-block;
+
+	animation:  hov 0.5s ease-in-out infinite alternate;
+	cursor: pointer;
+}
+
+#circle9 {
+	position: absolute;
+	left  : 33%;
+	bottom: 0;
+	opacity: 75%;
+
+	animation: firstright 4s linear infinite;
+    height: 250px;
+    width: 250px;
+    background-color: pink;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#circle9:hover {
+	animation: firstright 4s linear infinite;
+
+    background-color: ghostwhite;
+    border-radius: 50%;
+    box-shadow: 
+    	inset 0 0 50px aliceblue,
+	    inset 20px 0 80px coral,
+	    inset -20px 0 80px crimson,
+	    inset 20px 0 300px coral,
+	    inset -20px 0 300px crimson,
+	    0 0 50px aliceblue,
+	    -10px 0 80px skyblue,
+	    10px 0 80px skyblue;
+    display: inline-block;
+
+	animation:  hov 0.5s ease-in-out infinite alternate;
+	cursor: pointer;
+}
+
+#circle10 {
+	position: absolute;
+	right  : 33%;
+	top: 0;
+	opacity: 75%;
+
+	animation: secleft 4s linear infinite;
+    height: 250px;
+    width: 250px;
+    background-color: lightskyblue;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#circle10:hover {
+	animation: firstright 4s linear infinite;
+
+    background-color: ghostwhite;
+    border-radius: 50%;
+    box-shadow: 
+    	inset 0 0 50px coral,
+	    inset 20px 0 80px deepskyblue,
+	    inset -20px 0 80px blue,
+	    inset 20px 0 300px deepskyblue,
+	    inset -20px 0 300px blue,
+	    0 0 50px coral,
+	    -10px 0 80px crimson,
+	    10px 0 80px crimson;
+    display: inline-block;
+
+	animation:  hov 0.5s ease-in-out infinite alternate;
+	cursor: pointer;
+}
+
+#circle11 {
+	position: absolute;
+	top   : 32%;
+	right: 33%;
+	opacity: 75%;
+
+	animation: firstright 4s linear infinite;
+    height: 250px;
+    width: 250px;
+    background-color: pink;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#circle11:hover {
+	animation: firstright 4s linear infinite;
+
+    background-color: ghostwhite;
+    border-radius: 50%;
+    box-shadow: 
+    	inset 0 0 50px aliceblue,
+	    inset 20px 0 80px coral,
+	    inset -20px 0 80px crimson,
+	    inset 20px 0 300px coral,
+	    inset -20px 0 300px crimson,
+	    0 0 50px aliceblue,
+	    -10px 0 80px skyblue,
+	    10px 0 80px skyblue;
+    display: inline-block;
+
+	animation:  hov 0.5s ease-in-out infinite alternate;
+	cursor: pointer;
+}
+
+#circle12 {
+	position: absolute;
+	right  : 33%;
+	bottom: 0;
+	opacity: 75%;
+
+	animation: secleft 4s linear infinite;
+    height: 250px;
+    width: 250px;
+    background-color: lightskyblue;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#circle12:hover {
+	animation: firstright 4s linear infinite;
+
+    background-color: ghostwhite;
+    border-radius: 50%;
+    box-shadow: 
+    	inset 0 0 50px coral,
+	    inset 20px 0 80px deepskyblue,
+	    inset -20px 0 80px blue,
+	    inset 20px 0 300px deepskyblue,
+	    inset -20px 0 300px blue,
+	    0 0 50px coral,
+	    -10px 0 80px crimson,
+	    10px 0 80px crimson;
+    display: inline-block;
+
+	animation:  hov 0.5s ease-in-out infinite alternate;
+	cursor: pointer;
+}
+
+#circle13 {
+	position: absolute;
+	right  : 17%;
+	top: 0;
+	opacity: 75%;
+
+	animation: firstright 4s linear infinite;
+    height: 250px;
+    width: 250px;
+    background-color: pink;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#circle13:hover {
+	animation: firstright 4s linear infinite;
+
+    background-color: ghostwhite;
+    border-radius: 50%;
+    box-shadow: 
+    	inset 0 0 50px aliceblue,
+	    inset 20px 0 80px coral,
+	    inset -20px 0 80px crimson,
+	    inset 20px 0 300px coral,
+	    inset -20px 0 300px crimson,
+	    0 0 50px aliceblue,
+	    -10px 0 80px skyblue,
+	    10px 0 80px skyblue;
+    display: inline-block;
+
+	animation:  hov 0.5s ease-in-out infinite alternate;
+	cursor: pointer;
+}
+
+#circle14 {
+	position: absolute;
+	top   : 32%;
+	right  : 17%;
+	opacity: 75%;
+
+	animation: secleft 4s linear infinite;
+    height: 250px;
+    width: 250px;
+    background-color: lightskyblue;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#circle14:hover {
+	animation: firstright 4s linear infinite;
+
+    background-color: ghostwhite;
+    border-radius: 50%;
+    box-shadow: 
+    	inset 0 0 50px coral,
+	    inset 20px 0 80px deepskyblue,
+	    inset -20px 0 80px blue,
+	    inset 20px 0 300px deepskyblue,
+	    inset -20px 0 300px blue,
+	    0 0 50px coral,
+	    -10px 0 80px crimson,
+	    10px 0 80px crimson;
+    display: inline-block;
+
+	animation:  hov 0.5s ease-in-out infinite alternate;
+	cursor: pointer;
+}
+
+#circle15 {
+	position: absolute;
+	right  : 17%;
+	bottom: 0;
+	opacity: 75%;
+
+	animation: firstright 4s linear infinite;
+    height: 250px;
+    width: 250px;
+    background-color: pink;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#circle15:hover {
+	animation: firstright 4s linear infinite;
+
+    background-color: ghostwhite;
+    border-radius: 50%;
+    box-shadow: 
+    	inset 0 0 50px aliceblue,
+	    inset 20px 0 80px coral,
+	    inset -20px 0 80px crimson,
+	    inset 20px 0 300px coral,
+	    inset -20px 0 300px crimson,
+	    0 0 50px aliceblue,
+	    -10px 0 80px skyblue,
+	    10px 0 80px skyblue;
+    display: inline-block;
+
+	animation:  hov 0.5s ease-in-out infinite alternate;
+	cursor: pointer;
+}
+
+#circle16 {
+	position: absolute;
+	top  : 0;
+	right: 0;
+	opacity: 75%;
+
+	animation: secleft 4s linear infinite;
+    height: 250px;
+    width: 250px;
+    background-color: lightskyblue;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#circle16:hover {
+	animation: firstright 4s linear infinite;
+
+    background-color: ghostwhite;
+    border-radius: 50%;
+    box-shadow: 
+    	inset 0 0 50px coral,
+	    inset 20px 0 80px deepskyblue,
+	    inset -20px 0 80px blue,
+	    inset 20px 0 300px deepskyblue,
+	    inset -20px 0 300px blue,
+	    0 0 50px coral,
+	    -10px 0 80px crimson,
+	    10px 0 80px crimson;
+    display: inline-block;
+
+	animation:  hov 0.5s ease-in-out infinite alternate;
+	cursor: pointer;
+}
+
+#circle17 {
+	position: absolute;
+	right: 0;
+	top   : 32%;
+	opacity: 75%;
+
+	animation: firstright 4s linear infinite;
+    height: 250px;
+    width: 250px;
+    background-color: pink;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#circle17:hover {
+	animation: firstright 4s linear infinite;
+
+    background-color: ghostwhite;
+    border-radius: 50%;
+    box-shadow: 
+    	inset 0 0 50px aliceblue,
+	    inset 20px 0 80px coral,
+	    inset -20px 0 80px crimson,
+	    inset 20px 0 300px coral,
+	    inset -20px 0 300px crimson,
+	    0 0 50px aliceblue,
+	    -10px 0 80px skyblue,
+	    10px 0 80px skyblue;
+    display: inline-block;
+
+	animation:  hov 0.5s ease-in-out infinite alternate;
+	cursor: pointer;
+}
+
+#circle18 {
+	position: absolute;
+	right  : 0;
+	bottom: 0;
+	opacity: 75%;
+
+	animation: secleft 4s linear infinite;
+    height: 250px;
+    width: 250px;
+    background-color: lightskyblue;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#circle18:hover {
+	animation: firstright 4s linear infinite;
+
+    background-color: ghostwhite;
+    border-radius: 50%;
+    box-shadow: 
+    	inset 0 0 50px coral,
+	    inset 20px 0 80px deepskyblue,
+	    inset -20px 0 80px blue,
+	    inset 20px 0 300px deepskyblue,
+	    inset -20px 0 300px blue,
+	    0 0 50px coral,
+	    -10px 0 80px crimson,
+	    10px 0 80px crimson;
+    display: inline-block;
+
+	animation:  hov 0.5s ease-in-out infinite alternate;
+	cursor: pointer;
+}
