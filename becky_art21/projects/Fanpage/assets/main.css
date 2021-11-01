@@ -1,0 +1,109 @@
+@font-face {
+	font-family: 'Rumble-Brave';
+	src: url(Rumblebrave-Yw72.otf);
+}
+
+body {
+	/*issue 1: can't get bgdots onto the background; also, how to change opacity?*/
+	background: linear-gradient(180deg, rgba(89, 191, 229, 100%) 0%, rgba(193, 190, 41, 100%) 100%);
+	cursor: url('cursor.png'), auto;	
+}
+
+h1 {
+	font-family: Rumble-Brave;
+	font-size: 144px;
+}
+
+hr {
+	background-color: #D72F4A;
+	width: 90%;
+	height: 7px;
+	border-radius: 5px;
+	border: 0 none;
+}
+
+.titlecont {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.titlecont .title {
+	display: flex;
+	padding-left: 40px;
+	padding-top: 15px;
+	padding-bottom: 5px;
+}
+
+.titlecont .title:hover {
+	cursor: url('shreklennycur.png'), auto;
+}
+
+.myswamp {
+	display: flex;
+	padding-left: 35px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+img {
+	transition: all linear 1s; 
+}
+
+img.myswamp-img {
+	position: absolute;
+	top: 160px;
+	left: 43px;
+	opacity: 1;
+}
+
+.myswamptit:hover img.myswamp-img{
+	opacity: 0;
+	cursor: url('shreklennycur.png'), auto;
+}
+
+.myswamptit:hover img{
+	opacity: 1;
+	cursor: url('shreklennycur.png'), auto;
+}
+
+.enoughreg {
+	display: flex;
+	padding-left: 35px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.shrekt {
+	display: flex;
+	padding-left: 35px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.lmarke {
+	display: flex;
+	padding-left: 35px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.boredshrek {
+	display: flex;
+	padding-left: 35px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.charming {
+	display: flex;
+	padding-left: 35px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.tbub {
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
