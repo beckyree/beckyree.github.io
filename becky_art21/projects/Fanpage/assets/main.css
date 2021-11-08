@@ -175,19 +175,30 @@ hr {
 
 /* Media Query for mobile styles*/
 @media only screen and (max-width:  800px) {
-h1 {
-    font-size: 6vh;
-  }
+	.titlecont .title {
+	    font-size: 8vh;
+	  }
 
-.column-1 {
-  width:  100%;
-}
+	.myswamp-img {
+		display: none;
+	}
+	.enoughreg-img {
+		display: none;
+	}
+	.myswamp-img {
+		display: none;
+	}
+	.shrekt-img {
+		display: none;
+	}
+	.lmarke-img {
+		display: none;
+	}
+	.charming-img {
+		display: none;
+	}
 
-.column-1 {
-  padding-right:  0;
-  padding-bottom:  50px;
-  align-items: center;
+	.tbub {
+		display: none;
+	}
 }
-}
-
-@media (hover: hover) { ... }
