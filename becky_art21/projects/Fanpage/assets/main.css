@@ -1,6 +1,16 @@
 @font-face {
 	font-family: 'Rumble-Brave';
-	src: url(Rumblebrave-Yw72.otf);
+	src: url(fonts/Rumblebrave-Yw72.otf);
+}
+
+@font-face {
+	font-family: 'RufinaB';
+	src: url(fonts/Rufina-Bold.ttf);
+}
+
+@font-face {
+	font-family: 'RufinaR';
+	src: url(fonts/Rufina-Regular.ttf);
 }
 
 body {
@@ -28,16 +38,14 @@ hr {
 	justify-content: space-between;
 }
 
-.titlecont .title {
-	display: flex;
-	padding-left: 40px;
-	padding-top: 15px;
-	padding-bottom: 5px;
-}
-
-.titlecont .title:hover {
-	cursor: url('shreklennycur.png'), auto;
-}
+	.titlecont .title {
+		display: flex;
+		padding-left: 80px;
+		padding-top: 15px;
+		padding-bottom: 5px;
+		font-family: RufinaB;
+		font-size: 45px;
+	}
 
 .myswamp {
 	display: flex;
@@ -45,27 +53,23 @@ hr {
 	padding-top: 40px;
 	padding-bottom: 40px;
 }
-
-img {
-	transition: all linear 1s; 
-}
-
-img.myswamp-img {
-	position: absolute;
-	top: 160px;
-	left: 43px;
-	opacity: 1;
-}
-
-.myswamptit:hover img.myswamp-img{
-	opacity: 0;
-	cursor: url('shreklennycur.png'), auto;
-}
-
-.myswamptit:hover img{
-	opacity: 1;
-	cursor: url('shreklennycur.png'), auto;
-}
+	img {
+		transition: all linear 1s; 
+	}
+	img.myswamp-img {
+		position: absolute;
+		top: 148px;
+		left: 43px;
+		opacity: 1;
+	}
+	.myswamptit:hover img.myswamp-img{
+		opacity: 0;
+		cursor: url('shreklennycur.png'), auto;
+	}
+	.myswamptit:hover img{
+		opacity: 1;
+		cursor: url('shreklennycur.png'), auto;
+	}
 
 .enoughreg {
 	display: flex;
@@ -73,6 +77,23 @@ img.myswamp-img {
 	padding-top: 40px;
 	padding-bottom: 40px;
 }
+	img {
+		transition: all linear 1s; 
+	}
+	img.enoughreg-img {
+		position: absolute;
+		top: 748px;
+		right: 102px;
+		opacity: 1;
+	}
+	.enoughregit:hover img.enoughreg-img{
+		opacity: 0;
+		cursor: url('shreklennycur.png'), auto;
+	}
+	.enoughregit:hover img{
+		opacity: 1;
+		cursor: url('shreklennycur.png'), auto;
+	}
 
 .shrekt {
 	display: flex;
@@ -80,6 +101,23 @@ img.myswamp-img {
 	padding-top: 40px;
 	padding-bottom: 40px;
 }
+	img {
+		transition: all linear 1s; 
+	}
+	img.shrekt-img {
+		position: absolute;
+		top: 1348px;
+		left: 43px;
+		opacity: 1;
+	}
+	.shrektit:hover img.shrekt-img{
+		opacity: 0;
+		cursor: url('shreklennycur.png'), auto;
+	}
+	.shrektit:hover img{
+		opacity: 1;
+		cursor: url('shreklennycur.png'), auto;
+	}
 
 .lmarke {
 	display: flex;
@@ -87,13 +125,23 @@ img.myswamp-img {
 	padding-top: 40px;
 	padding-bottom: 40px;
 }
-
-.boredshrek {
-	display: flex;
-	padding-left: 35px;
-	padding-top: 40px;
-	padding-bottom: 40px;
-}
+	img {
+		transition: all linear 1s; 
+	}
+	img.lmarke-img {
+		position: absolute;
+		top: 1948px;
+		right: 102px;
+		opacity: 1;
+	}
+	.lmarkeit:hover img.lmarke-img{
+		opacity: 0;
+		cursor: url('shreklennycur.png'), auto;
+	}
+	.lmarkeit:hover img{
+		opacity: 1;
+		cursor: url('shreklennycur.png'), auto;
+	}
 
 .charming {
 	display: flex;
@@ -101,9 +149,45 @@ img.myswamp-img {
 	padding-top: 40px;
 	padding-bottom: 40px;
 }
+	img {
+		transition: all linear 1s; 
+	}
+	img.charming-img {
+		position: absolute;
+		top: 2548px;
+		left: 43px;
+		opacity: 1;
+	}
+	.charmingit:hover img.charming-img{
+		opacity: 0;
+		cursor: url('shreklennycur.png'), auto;
+	}
+	.charmingit:hover img{
+		opacity: 1;
+		cursor: url('shreklennycur.png'), auto;
+	}
 
 .tbub {
 	display: flex;
 	align-items: center;
 	padding: 20px;
 }
+
+/* Media Query for mobile styles*/
+@media only screen and (max-width:  800px) {
+h1 {
+    font-size: 6vh;
+  }
+
+.column-1 {
+  width:  100%;
+}
+
+.column-1 {
+  padding-right:  0;
+  padding-bottom:  50px;
+  align-items: center;
+}
+}
+
+@media (hover: hover) { ... }

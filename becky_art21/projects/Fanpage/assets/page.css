@@ -1,22 +1,21 @@
 @font-face {
-	font-family: 'Rumble-Brave';
-	src: url(Rumblebrave-Yw72.otf);
+	font-family: 'Dutch';
+	src: url(fonts/DutchbrigadeRegular-8M7VJ.otf);
 }
 
 @font-face {
-	font-family: 'sourcesanspro';
-	src: url(Source_Sans_Pro/SourceSansPro-Regular.ttf);
+	font-family: 'RufinaB';
+	src: url(fonts/Rufina-Bold.ttf);
+}
+
+@font-face {
+	font-family: 'RufinaR';
+	src: url(fonts/Rufina-Regular.ttf);
 }
 
 body {
 	background: linear-gradient(180deg, rgba(89, 191, 229, 100%) 0%, rgba(193, 190, 41, 100%) 100%);
 	cursor: url('cursor.png'), auto;
-}
-
-h2 {
-	font-family: Rumble-Brave;
-	font-size: 40px;
-	text-align: right;
 }
 
 hr {
@@ -28,11 +27,29 @@ hr {
 }
 
 p {
-	font-family: sourcesanspro;
+	font-family: RufinaR;
 	width: 80%;
 	text-align: center;
 	font-size: 30px;
 }
+	p::first-letter {
+		color: #D72F4A;;
+        float: left;
+        font-size: 5em;
+        font-family: Dutch;
+
+        margin: 0 .1em 0 0;
+        line-height: 0.9;
+      }
+
+a {
+	color: black;
+}
+
+	a:hover { cursor: url('shreklennycur.png'), auto; color: #D72F4A; }
+	a:link { text-decoration: none; }
+	a:visited { text-decoration: none; }
+	a:active { text-decoration: none; }
 
 .titlecont {
 	display: flex;
@@ -40,22 +57,27 @@ p {
 	justify-content: space-between;
 }
 
-.titlecont .title {
-	display: flex;
-	padding-left: 40px;
-	padding-top: 15px;
-	padding-bottom: 5px;
-}
+	.titlecont .title {
+		display: flex;
+		padding-left: 80px;
+		padding-top: 15px;
+		padding-bottom: 5spx;
+		font-family: RufinaB;
+		font-size: 45px;
+	}
 
-.titlecont .memename {
-	display: flex;
-	padding-right: 80px;
-	padding-top: 0px;
-	margin-bottom: 0;
-}
+	.titlecont .memename {
+		display: flex;
+		font-family: RufinaR;
+		font-size: 20px;
+		text-align: right;
+		padding-right: 80px;
+		padding-top: 0px;
+		margin-bottom: 0;
+	}
 
 .scroll {
-	font-family: sourcesanspro;
+	font-family: RufinaR;
 	width: 80%;
 	text-align: center;
 	font-size: 30px;
@@ -70,11 +92,109 @@ p {
 
 .con .ogclip {
 	position: absolute;
-	top: 318px;
+	top: 300px;
 }
 
-.con .memeev {
+.con .bigLetter {
+	font-family: Rumble-Brave;
+	font-size: 40px;
+}
+
+.rotateimg {
+	transform: rotate(90deg);
+}
+
+.memeev {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+
+	/*width: 500px; 
+	height: 40%;*/
+}
+
+.memeev .memeev0.5 {
 	display: flex;
 	flex-wrap: wrap;
 	padding: 10px;
+
+	position: absolute;
+	top: 1400px;
+}
+
+.memeev .memeev1 {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+
+	position: absolute;
+	left: 120px;
+	top: 1400px;
+}
+
+.memeev .memeev2 {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+
+	position: absolute;
+	right: 120px;
+	top: 1400px;
+}
+
+.memeev .memeev3 {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+
+	position: absolute;
+	top: 1880px;
+}
+
+/* Media Query for mobile styles*/
+@media only screen and (max-width:  600px) {
+p {
+    font-size: 2vh;
+  }
+
+.titlecont {
+	flex-direction: column;
+	align-items: center;
+}
+
+.titlecont .title {
+	font-size: 6vh;
+}
+
+.titlecont .memename {
+	font-size: 2vh;
+}
+
+.con .ogclip {
+	width: 20%;
+}
+
+.memeev {
+	flex-direction: column;
+	align-items: center;
+}
+
+.memeev .memeev1 {
+  width:  20%;
+  padding-right:  0;
+  padding-bottom:  50px;
+}
+
+.memeev .memeev2 {
+  width:  20%;
+}
+
+.memeev .memeev3 {
+  width:  20%;
+}
+
+.column-1 {
+  
+}
 }
