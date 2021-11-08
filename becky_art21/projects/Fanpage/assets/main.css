@@ -174,11 +174,14 @@ hr {
 }
 
 /* Media Query for mobile styles*/
-@media only screen and (max-width:  800px) {
+@media only screen and (max-width:  600px) {
 	.titlecont .title {
 	    font-size: 8vh;
 	    align-items: center;
 	    justify-content: center;
+	    /*background-color: blue;*/
+	    padding-right: 50px;
+	    padding-left: 120px;
 	  }
 
 	.myswamp-img {

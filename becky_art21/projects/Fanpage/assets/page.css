@@ -93,6 +93,13 @@ a {
 .con .ogclip {
 	position: absolute;
 	top: 300px;
+
+	/*width: "615px";
+	height: "370px";*/
+}
+
+.con .ogclip:hover {
+	cursor: url('shreklennycur.png'), auto;
 }
 
 .con .bigLetter {
@@ -114,10 +121,10 @@ a {
 	height: 40%;*/
 }
 
-.memeev .memeev0.5 {
+.memeev .memeev0-5 {
 	display: flex;
 	flex-wrap: wrap;
-	padding: 10px;
+	/*padding: 10px;*/
 
 	position: absolute;
 	top: 1400px;
@@ -131,6 +138,8 @@ a {
 	position: absolute;
 	left: 120px;
 	top: 1400px;
+	/*width: "505";*/
+/*	height: "260";*/
 }
 
 .memeev .memeev2 {
@@ -155,43 +164,94 @@ a {
 /* Media Query for mobile styles*/
 @media only screen and (max-width:  600px) {
 p {
-    font-size: 2vh;
+    font-size: 2.5vh;
   }
 
 .titlecont {
 	flex-direction: column;
 	align-items: center;
+	margin: 0 auto;
+
 }
 
 .titlecont .title {
 	font-size: 6vh;
+	/*background-color: blue;*/
+	text-align: center;
+	justify-content: space-evenly;
+	padding-right: 85px;
 }
 
 .titlecont .memename {
 	font-size: 2vh;
+	/*background-color: blue;*/
+	text-align: center;
+	justify-content: space-evenly;
+	padding-left: 70px;
+}
+
+.scroll {
+	display: none;
 }
 
 .con .ogclip {
-	width: 20%;
+	width: 45%;
+	align-items: center;
+	justify-content: center;
+	/*background-color: blue;*/
+	
+	position: absolute;
+	top: 250px;
+}
+
+iframe {
+	width: 100%;
+	height: 50%;
+	position: static;
+}
+
+img {
+	width: 100%;
 }
 
 .memeev {
+	width: 100%;
+	margin: 0;
 	flex-direction: column;
-	align-items: center;
+	justify-content: center;
 }
 
 .memeev .memeev1 {
-  width:  20%;
-  padding-right:  0;
-  padding-bottom:  50px;
+	width: 80%;
+	height: 80%;
+  justify-content: center;
+  align-items: center;
+	/*background-color: blue;*/
+	position: absolute;
+	top: 740px;
+	left: 40px;
 }
 
 .memeev .memeev2 {
-  width:  20%;
+	width: 80%;
+	height: 80%;
+  justify-content: center;
+  align-items: center;
+	/*background-color: blue;*/
+	position: absolute;
+	top: 1120px;
+	left: 40px;
 }
 
 .memeev .memeev3 {
-  width:  20%;
+	width: 80%;
+	height: 80%;
+  justify-content: center;
+  align-items: center;
+	/*background-color: blue;*/
+	position: absolute;
+	top: 1400px;
+	left: 40px;
 }
 
 .column-1 {
