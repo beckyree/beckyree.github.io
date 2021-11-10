@@ -1,0 +1,110 @@
+/*body {
+	background-color: whitesmoke;
+}
+
+h1 {
+	text-align: center;
+	font-size: 40px;
+	font-weight: unset;
+}
+
+h2 {
+	text-align: center;
+	font-size: 30px;
+}
+
+.colors {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.red {
+	background-color: black;
+	color: whitesmoke;
+	font-size: 30px;
+	border-radius: 50px;
+	padding: 30px;
+}
+
+.red:hover {
+  cursor: pointer;
+  opacity: .8;
+  transition: 8ms ease-out;
+}
+
+.blue {
+	background-color: black;
+	color: whitesmoke;
+	font-size: 30px;
+	border-radius: 50px;
+	padding: 30px;
+}
+
+.blue:hover {
+  cursor: pointer;
+  opacity: .8;
+  transition: 8ms ease-out;
+}
+
+.yellow {
+	background-color: black;
+	color: whitesmoke;
+	font-size: 30px;
+	border-radius: 50px;
+	padding: 30px;
+}
+
+.yellow:hover {
+  cursor: pointer;
+  opacity: .8;
+  transition: 8ms ease-out;
+}*/
+
+
+body {
+	background-color: #D9AFD9;
+	background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+	color:  white;
+	font-family: helvetica;
+}
+
+p {
+	font-size: 30px;
+	text-align: center;
+	color: white;
+	font-family: helvetica;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 85vh;
+}
+
+.button {
+	background-color: whitesmoke;
+	opacity: 70%;
+	color:  #D9AFD9;
+	border-radius: 20px;
+	padding: 20px 40px;
+	font-size: 36px;
+}
+
+.button:hover {
+	font-weight: bold;
+	opacity: 100%;
+	cursor: pointer;
+}
+
+.hearts {
+	position: absolute;
+	/*width: 240px;
+	height: 207px;*/
+	background-image: url(hearts.png);
+	/*border-radius: 50%;
+	mix-blend-mode: color-dodge;*/
+}
