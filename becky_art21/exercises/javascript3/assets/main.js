@@ -14,60 +14,47 @@
 
 let button = document.querySelector(".button");
 let wrapper = document.querySelector(".wrapper");
-let hearts = document.querySelectorAll(".hearts");
+// let hearts = document.querySelectorAll(".hearts");
+let body = document.querySelector("body");
 
 let affirmations = ["I am enough", "I am unique", "I believe in myself",
 	"I am enjoying the present moment", "I am worthy", "I have hope"];
 
-function genAff() {
-	let randIndex = Math.floor(Math.random() * affirmations.length);
-  	let affirmation = affirmations[randIndex];
-}
-
-// button.addEventListener("click", function (event) {
-//   console.log(event, event.target);
-//   let newItem = document.createElement("div");
-//   // newItem.classList.add(genAff);
-//   wrapper.appendChild(newItem);
-// });
-
-// // place our blobs randomly
-// hearts.forEach(function (heart) {
-// heart.style.right = (100 * Math.random()) + '%';
-// heart.style.top = (100 * Math.random()) + '%';
-// });
-// wrapper.addEventListener("click", function (event) {
-// if (event.target.classList.contains("hearts")) {
-//   event.target.remove();
-// }
-// });
-
 button.addEventListener("click", function(event) {
-	console.log(event, event.target);
-	let newItem = document.createElement("div");
-	wrapper.appendChild(newItem);
+	let randIndex = Math.floor(Math.random() * affirmations.length);
+	let affirmation = affirmations[randIndex];
+	let displayText = document.createElement("div");
+	displayText.style.position = "absolute";
+	displayText.style.right = (100 * Math.random()) + '%';
+	displayText.style.top = (100 * Math.random()) + '%';
+	displayText.classList.add("new-content");
+	displayText.innerHTML = affirmation;
+	body.appendChild(displayText);
 
-	hearts.forEach(function (heart) {
-	heart.style.right = (100 * Math.random()) + '%';
-	heart.style.top = (100 * Math.random()) + '%';
-	});
-	wrapper.addEventListener("click", function (event) {
-	if (event.target.classList.contains("hearts")) {
-	  event.target.remove();
-}	
+	// let hearts = document.createElement(".hearts");
+	// hearts.style.right = (100 * Math.random()) + '%';
+	// hearts.style.top = (100 * Math.random()) + '%';
+	// hearts.classList.add("new-content");
+	// body.appendChild(hearts);
 
-// button.addEventListener("click", function(event) {
-//   console.log(event, event.target);
-//   let newItem = document.createElement("div");
-//   newItem.classList.add("new-content");
-//   newItem.innerHTML = "But wait, theres more ";
-//   wrapper.appendChild(newItem);
-// });
+	console.log(affirmation);
 
-// button.addEventListener("click", function(event) {
-//   console.log(event, event.target);
-//   let newItem = document.createElement("div");
-//   newItem.classList.add(genAff());
-//   // newItem.innerHTML = genAff;
-//   wrapper.appendChild(newItem);
-// });
+
+	// if (event.target.classList.contains("hearts")) {
+	//   event.target.remove();
+	// }
+
+	// console.log(event, event.target);
+	// let newItem = document.createElement("div");
+	// newItem.add(genAff);
+	// wrapper.appendChild(newItem);
+
+	// hearts.forEach(function (heart) {
+	// heart.style.right = (100 * Math.random()) + '%';
+	// heart.style.top = (100 * Math.random()) + '%';
+	// });
+	// wrapper.addEventListener("click", function (event) {
+	// if (event.target.classList.contains("hearts")) {
+	//   event.target.remove();
+	// }
+});	
