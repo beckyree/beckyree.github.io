@@ -1,0 +1,54 @@
+body {
+  background-color: floralwhite;
+  color:  darkslategray;
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  font-weight: normal;
+  font-size:  15px;
+  padding-left: 60px;
+}
+
+svg {
+  /*background-color:  white;*/
+}
+
+.tick {
+  font-size:  20px;
+  letter-spacing: 1px;
+}
+
+.domain {
+  display: none;
+}
+
+/*line {
+  display: none;
+}*/
+.rectangle {
+  transition: fill 500ms ease;
+}
+
+.rectangle:hover {
+  fill: #ff6af5;
+  cursor: pointer;
+
+}
+
+/*.rectangle:hover {
+  cursor: url(cold.png), auto;
+
+}
+
+.rectangle:hover {
+  cursor: url(mind.png), auto;
+
+}
+
+.rectangle:hover {
+  cursor: url(hot.png), auto;
+
+}*/
