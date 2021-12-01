@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>	
+	<!-- from class notes -->
+	<!-- <model-viewer src="https://cif21.labud.nyc/assets/astronaut.glb">
+	</model-viewer> -->
+
+	<model-viewer src="https://cif21.labud.nyc/assets/astronaut.glb" camera-controls>
+	</model-viewer>
+
+	<!-- <model-viewer src="https://cif21.labud.nyc/assets/astronaut.glb" camera-controls auto-rotate>
+	</model-viewer>
+
+	<model-viewer src="https://cif21.labud.nyc/assets/astronaut.glb" camera-controls auto-rotate rotation-per-second="30deg">
+	</model-viewer>
+
+
+	<model-viewer src="https://cif21.labud.nyc/assets/astronaut.glb" camera-controls interaction-prompt-threshold=500>
+	</model-viewer>
+
+
+	<model-viewer src="https://cif21.labud.nyc/assets/astronaut.glb" camera-controls interaction-prompt-threshold=500 interaction-prompt-style="basic">
+	</model-viewer>
+
+	<model-viewer src="https://cif21.labud.nyc/assets/astronaut.glb" camera-controls interaction-prompt-threshold=500 disable-zoom>
+	</model-viewer> -->
+
+
+	<!-- <model-viewer src="https://cif21.labud.nyc/assets/astronaut.glb" camera-controls interaction-prompt-threshold=500 disable-zoom>
+	  <div slot="interaction-prompt">👽</div>
+	</model-viewer> -->
+
+	
+	<model-viewer src="https://cif21.labud.nyc/assets/astronaut.glb" camera-controls interaction-prompt-threshold=500 disable-zoom>
+	  <div class="interaction-prompt" slot="interaction-prompt">👽</div>
+	</model-viewer>
+
+	<!-- from google's notes -->
+	<!-- <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+	ios-src="https://modelviewer.dev/shared-assets/models/Astronaut.usdz"
+	alt="A 3D model of an astronaut"
+	ar
+	auto-rotate
+	camera-controls></model-viewer> -->
+</body>
+</html>

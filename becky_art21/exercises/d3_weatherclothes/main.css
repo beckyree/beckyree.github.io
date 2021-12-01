@@ -1,15 +1,14 @@
 body {
-  background-color: floralwhite;
+  background-color: ghostwhite;
   color:  darkslategray;
   margin: 0;
-  font-family: "DM Sans", sans-serif;
   padding: 20px;
 }
 
 h1 {
   font-weight: normal;
-  font-size:  15px;
-  padding-left: 60px;
+  font-size:  20px;
+  padding-left: 80px;
 }
 
 svg {
@@ -28,7 +27,7 @@ svg {
 /*line {
   display: none;
 }*/
-.rectangle {
+/*.rectangle {
   transition: fill 500ms ease;
 }
 
@@ -36,7 +35,7 @@ svg {
   fill: #ff6af5;
   cursor: pointer;
 
-}
+}*/
 
 /*.rectangle:hover {
   cursor: url(cold.png), auto;
