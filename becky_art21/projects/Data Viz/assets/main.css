@@ -1,0 +1,58 @@
+body {
+	padding-left: 30px;
+	padding-right: 30px;
+	background-color: #DCC3B5;
+	font-family: sans-serif;
+}
+
+hr {
+	background-color: black;
+	color: black;
+	border-radius: 50px;
+	border: none;
+	height: 8px;
+}
+
+h1 {
+	font-size: 50px;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 2;
+}
+
+.col {
+	display: flex;
+	flex-direction: column;
+}
+
+.box {
+	float: left;
+	width: 33.33%;
+	padding: 30px;
+	text-align: center;
+	font-size: 25px;
+	cursor: pointer;
+	color: white;
+	background-color: #DCC3B5;
+	border-width: 2px;
+}
+
+/*Clear floats after the columns*/
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the image*/
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
