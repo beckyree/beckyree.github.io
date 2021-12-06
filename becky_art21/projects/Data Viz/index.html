@@ -11,77 +11,152 @@
 
 	<div class="container">
 		<div class="col">
+			<div class="vl"></div>
 			<div class="box" onclick="openTab('rh');">Red Hoodie</div>
 			<div class="box" onclick="openTab('bb');">Blue Boxers</div>
-			<div class="box" onclick="openTab('as');">Addidas Slippers</div>
-			<div class="box" onclick="openTab('b3');">Box 4</div>
+			<div class="box" onclick="openTab('as');">Adiddas Slippers</div>
+			<!-- <div class="box" onclick="openTab('b3');">Box 4</div> -->
 		</div>
 
 		<div class="col">
+			<div class="vl"></div>
 			<div class="box" onclick="openTab('pd');">Play Doh</div>
 			<div class="box" onclick="openTab('nes');">No Exit Sweats</div>
-			<div class="box" onclick="openTab('b3');">Box 3</div>
-			<div class="box" onclick="openTab('b3');">Box 4</div>
+			<div class="box" onclick="openTab('as');">Adiddas Slippers</div>
+			<!-- <div class="box" onclick="openTab('b3');">Box 4</div> -->
 		</div>
 
 		<div class="col">
+			<div class="vl"></div>
 			<div class="box" onclick="openTab('f');">Flannel</div>
 			<div class="box" onclick="openTab('hq');">Harley Quinn</div>
 			<div class="box" onclick="openTab('lj');">Long Jeans</div>
-			<div class="box" onclick="openTab('b3');">Box 4</div>
+			<div class="box" onclick="openTab('c');">Converse</div>
 		</div>
 
 		<div class="col">
+			<div class="vl"></div>
 			<div class="box" onclick="openTab('sls');">Striped Long Sleeve</div>
 			<div class="box" onclick="openTab('lj');">Long Jeans</div>
-			<div class="box" onclick="openTab('b3');">Box 3</div>
-			<div class="box" onclick="openTab('b3');">Box 4</div>
+			<div class="box" onclick="openTab('s');">Sneakers</div>
+			<!-- <div class="box" onclick="openTab('b3');">Box 4</div> -->
 		</div>
 
 		<div class="col">
+			<div class="vl"></div>
 			<div class="box" onclick="openTab('pd');">Play Doh</div>
 			<div class="box" onclick="openTab('cbs');">Collared Blue Stripes</div>
 			<div class="box" onclick="openTab('lj');">Long Jeans</div>
-			<div class="box" onclick="openTab('b3');">Box 4</div>
+			<div class="box" onclick="openTab('s');">Sneakers</div>
 		</div>
 
 		<div class="col">
+			<div class="vl"></div>
 			<div class="box" onclick="openTab('gs');">Green Shirt</div>
 			<div class="box" onclick="openTab('nes');">No Exit Sweats</div>
-			<div class="box" onclick="openTab('b3');">Box 3</div>
-			<div class="box" onclick="openTab('b3');">Box 4</div>
+			<div class="box" onclick="openTab('s');">Sneakers</div>
+			<!-- <div class="box" onclick="openTab('b3');">Box 4</div> -->
 		</div>
 
 		<div class="col">
+			<div class="vl"></div>
 			<div class="box" onclick="openTab('es');">Eeyore Sweater</div>
 			<div class="box" onclick="openTab('cbs');">Collared Blue Stripes</div>
 			<div class="box" onclick="openTab('lj');">Long Jeans</div>
-			<div class="box" onclick="openTab('b3');">Box 4</div>
+			<div class="box" onclick="openTab('c');">Converse</div>
 		</div>
+
+		<div class="mirror"></div>
 	</div>
 
 <!-- 	Content of Boxes -->
-	<div id="b1" class="containerTab" style="display:none;background:green">
+	<div id="rh" class="containerTab">
 		<!-- If you want the ability to close the container, add a close button -->
 		<span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
-		<h2>Box 1</h2>
+		<br>
+		<h2>my red hoodie <3</h2>
+			<!-- Create a div where the graph will take place -->
+			<div id="my_dataviz"></div>
 		<p>Lorem ipsum..</p>
 	</div>
 
-	<div id="b2" class="containerTab" style="display:none;background:blue">
+	<div id="bb" class="containerTab">
 		<span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
-		<h2>Box 2</h2>
+		<h2>target boxers</h2>
 		<p>Lorem ipsum..</p>
 	</div>
 
-	<div id="b3" class="containerTab" style="display:none;background:red">
+	<div id="as" class="containerTab">
 		<span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
-		<h2>Box 3</h2>
+		<h2>pillows on my feet</h2>
 		<p>Lorem ipsum..</p>
 	</div>
 
-	<!-- Create a div where the graph will take place -->
-	<div id="my_dataviz"></div>
+	<div id="pd" class="containerTab">
+		<span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+		<h2>sky blue blanket</h2>
+		<p>Lorem ipsum..</p>
+	</div>
+
+	<div id="nes" class="containerTab">
+		<span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+		<h2>theatre merch that's getting crusty</h2>
+		<p>Lorem ipsum..</p>
+	</div>
+
+	<div id="f" class="containerTab">
+		<span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+		<h2>my trusty thrifted fallwear</h2>
+		<p>Lorem ipsum..</p>
+	</div>
+
+	<div id="hq" class="containerTab">
+		<span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+		<h2>thrifted nerd shit</h2>
+		<p>Lorem ipsum..</p>
+	</div>
+
+	<div id="lj" class="containerTab">
+		<span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+		<h2>multiple pairs, but same vibe</h2>
+		<p>Lorem ipsum..</p>
+	</div>
+
+	<div id="sls" class="containerTab">
+		<span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+		<h2>thrifted rainboww</h2>
+		<p>Lorem ipsum..</p>
+	</div>
+
+	<div id="cbs" class="containerTab">
+		<span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+		<h2>-10 years</h2>
+		<p>Lorem ipsum..</p>
+	</div>
+
+	<div id="gs" class="containerTab">
+		<span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+		<h2>is it ugly?</h2>
+		<p>Lorem ipsum..</p>
+	</div>
+
+	<div id="es" class="containerTab">
+		<span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+		<h2>same bro</h2>
+		<p>Lorem ipsum..</p>
+	</div>
+
+	<div id="c" class="containerTab">
+		<span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+		<h2>trusty college shoes</h2>
+		<p>Lorem ipsum..</p>
+	</div>
+
+	<div id="s" class="containerTab">
+		<span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+		<h2>crusty and stinky</h2>
+		<p>Lorem ipsum..</p>
+	</div>
 
 	<script src="https://d3js.org/d3.v7.min.js"></script>  
 	<script src="assets/main.js" type="text/javascript"></script>
