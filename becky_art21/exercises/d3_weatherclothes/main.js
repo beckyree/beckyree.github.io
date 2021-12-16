@@ -32,34 +32,22 @@ const y = d3.scaleLinear()
 .range([height - margin.bottom, margin.top]);
 
 // start creating the bars for the chart.
-// we set up rectangles, as well as sort the data from biggest to smallest
-// svg
-//   .append("g")
-//   // .attr("fill", "#D4B7D2")
-//   .selectAll("rect")
-// sort data according to value
-//   .data(data.sort((a,b) => d3.descending(a.amount, b.amount)))
-//   .join("rect")
-//   // places data on correct positions
-//   .attr("x", (d, i) => x(i))
-//   .attr("y", (d) => y(d.amount))
-//   .attr("height", d => y(0) - y(d.amount))
-//   .attr("width", x.bandwidth())
+// we set up rectangles
+svg
+  .append("g")
+  .attr("fill", "grey")
+  .selectAll("rect")
+  // .data(data.sort((a,b) => d3.descending(a.amount, b.amount)))
+  .data(data.sort((a,b) => d3.descending(a.amount)))
+  .join("rect")
+  // places data on correct positions
+  .attr("x", (d, i) => x(i))
+  .attr("y", (d) => y(d.amount))
+  .attr("height", d => y(0) - y(d.amount))
+  .attr("width", x.bandwidth())
   //add a class
-  // .attr("class", "rectangle")
-
-  // Add the line
-    svg
-      .append("path")
-      .datum(data)
-      .attr("fill", "none")
-      .attr("stroke", "black")
-      .attr("stroke-width", 1.5)
-      .attr("d", d3.line()
-        .x(function(d) { return x(d.name) })
-        .y(function(d) { return y(d.amount) })
-        )
-      .attr("class", "linePath")
+  .attr("class", "rectangle")
+  .style("fill", function(d){ if(d.amount>70){return "#E64A19"} else if(d.amount<63) {return "#B3E5FC"} else {return "#FDD835"}})
 
 // set up labels for x axis
 // the transform moves the labels to the bottom, comment out to see what i mean
@@ -80,6 +68,59 @@ svg.append("g").call(yAxis);
 
 //draws the labels onto the page. this puts them at the top by default so the you need to transform their position.
 svg.append("g").call(xAxis);
+
+// draws bars onto page. try adding another flower to the data to see how it changes.
+  svg.node();
+
+// start creating the bars for the chart.
+// we set up rectangles, as well as sort the data from biggest to smallest
+// svg
+//   .append("g")
+//   // .attr("fill", "#D4B7D2")
+//   .selectAll("rect")
+// sort data according to value
+//   .data(data.sort((a,b) => d3.descending(a.amount, b.amount)))
+//   .join("rect")
+//   // places data on correct positions
+//   .attr("x", (d, i) => x(i))
+//   .attr("y", (d) => y(d.amount))
+//   .attr("height", d => y(0) - y(d.amount))
+//   .attr("width", x.bandwidth())
+  //add a class
+  // .attr("class", "rectangle")
+
+// Add the line
+  // svg
+  //   .append("path")
+  //   .datum(data)
+  //   .attr("fill", "none")
+  //   .attr("stroke", "black")
+  //   .attr("stroke-width", 1.5)
+  //   .attr("d", d3.line()
+  //     .x(function(d) { return x(d.name) })
+  //     .y(function(d) { return y(d.amount) })
+  //     )
+  //   .attr("class", "linePath")
+
+// set up labels for x axis
+// the transform moves the labels to the bottom, comment out to see what i mean
+// function xAxis(g) {
+//   g.attr("transform", `translate(0, ${height - margin.bottom})`)
+//   g.call(d3.axisBottom(x).tickFormat(i => data[i].name))
+// }
+
+// set up labels for y axis
+// function yAxis(g){
+//   g.attr("transform", `translate(${margin.left}, 0)`)
+//   .call(d3.axisLeft(y).ticks(null, data.format))
+// }
+
+
+// draw the labels onto the page for y
+// svg.append("g").call(yAxis);
+
+//draws the labels onto the page. this puts them at the top by default so the you need to transform their position.
+// svg.append("g").call(xAxis);
 
 // draws bars onto page. try adding another flower to the data to see how it changes.
   // svg.node();

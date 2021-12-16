@@ -5,12 +5,7 @@
 
 @font-face {
 	font-family: 'Robotosmall';
-	src: url('fonts/RobotoCondensed-Regular.ttf');
-}
-
-@font-face {
-	font-family: 'Robotoit';
-	src: url('fonts/Roboto-BoldItalic.ttf');
+	src: url('fonts/OpenSans-VariableFont_wdth,wght.ttf');
 }
 
 h1 {
@@ -20,16 +15,27 @@ h1 {
 	color: black;
 }
 
+h1:hover {
+	cursor: url('clickherecur2.cur'), auto;
+	color: red;
+}
+
+.switch:hover {
+	/*cursor: url('clickherecur3.png'), url('clickherecur2.cur'), auto;*/
+	cursor: url('clickherecur2.cur'), auto;
+}
+
 h2 {
 	font-family: Robotobig;
-	font-size: 30px;
+	font-size: 35px;
 	text-align: center;
 }
 
 h3 {
 	color: black;
-	font-family: Robotoit;
-	font-size: 25px;
+	font-family: Robotosmall;
+	font-weight: bolder;
+	font-size: 30px;
 }
 
 h6 {
@@ -37,10 +43,39 @@ h6 {
 	font-family: Robotosmall;
 }
 
+hr {
+	width: 90%;
+	height: 3px;
+	background-color: black;
+	border: none;
+	border-radius: 50%;
+}
+
+p {
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+strong {
+	font-weight: bolder;
+}
+
+img {
+	border: 5px solid black;
+}
+
+.introCont {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 .intro {
 	display: flex;
 	font-family: Robotosmall;
 	flex-direction: column;
+	width: 90%;
 }
 
 .timeline {
@@ -96,8 +131,4 @@ h6 {
 
 .left::after, .right::after {
 	right: -6px;
-}
-
-.switch {
-	cursor: url('clickherecur3.png'), url('clickherecur2.cur'), auto;
 }

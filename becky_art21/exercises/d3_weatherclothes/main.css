@@ -24,18 +24,88 @@ svg {
   display: none;
 }
 
-/*line {
+line {
   display: none;
+
+}
+
+/*.rectangleC {
+  transition: fill 500ms ease;
+}
+
+.rectangleC:hover {
+  fill: skyblue;
+  cursor: pointer;
+}
+
+.rectangleM {
+  transition: fill 500ms ease;
+}
+
+.rectangleM:hover {
+  fill: yellow;
+  cursor: pointer;
+}
+
+.rectangleH {
+  transition: fill 500ms ease;
+}
+
+.rectangleH:hover {
+  fill: red;
+  cursor: pointer;
 }*/
-/*.rectangle {
+
+
+.rectangle {
   transition: fill 500ms ease;
 }
 
 .rectangle:hover {
-  fill: #ff6af5;
-  cursor: pointer;
+  /*fill: #ff6af5;*/
+  cursor: url(mid.png), auto;
+}
 
-}*/
+.hot {
+  width: 150px;
+  height: 425px;
+  position: absolute;
+  bottom: 120px;
+  left: 475px;
+  opacity: 0;
+}
+
+.hot:hover {
+  cursor: url(hot.png), auto;
+}
+
+.cold1 {
+  width: 150px;
+  height: 335px;
+  position: absolute;
+  bottom: 120px;
+  left: 145px;
+  opacity: 0;
+}
+
+.cold1:hover {
+  cursor: url(cold.png), auto;
+}
+
+.cold2 {
+  width: 150px;
+  height: 365px;
+  position: absolute;
+  bottom: 120px;
+  right: 145px;
+  opacity: 0;
+}
+
+.cold2:hover {
+  cursor: url(cold.png), auto;
+}
+
+
 
 /*.rectangle:hover {
   cursor: url(cold.png), auto;

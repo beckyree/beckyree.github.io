@@ -51,6 +51,41 @@ p {
 	top: 125px;
 }
 
+.vlLong2 {
+	border: 5px solid black;
+	height: 90px;
+	position: absolute;
+	top: 255px;
+}
+
+.vlLong3 {
+	border: 5px solid black;
+	height: 90px;
+	position: absolute;
+	top: 450px;
+}
+
+.vlShort2 {
+	border: 5px solid black;
+	height: 25px;
+	position: absolute;
+	top: 255px;
+}
+
+.vlShort3 {
+	border: 5px solid black;
+	height: 25px;
+	position: absolute;
+	top: 385px;
+}
+
+.vlShort4 {
+	border: 5px solid black;
+	height: 25px;
+	position: absolute;
+	top: 515px;
+}
+
 .container {
 	display: flex;
 	flex-direction: row;
