@@ -1,0 +1,14 @@
+body {
+	background-color: navy;
+}
+
+p {
+	font-family: Georgia;
+	font-size: 25pt;
+	text-align: left;
+	color: white;
+}
+
+img {
+	width: 250px;
+}

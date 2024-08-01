@@ -1,0 +1,23 @@
+h1{
+
+}
+
+p{
+
+}
+.column{
+	float:left;
+	width: 33.3%; 
+}
+
+.column a{
+	font-size: 30pt;
+}
+
+img {
+	width:200px;
+}
+
+body{
+	background-image: url('image.jpg');
+}
