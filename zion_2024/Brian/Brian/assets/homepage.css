@@ -1,0 +1,28 @@
+p{
+	color:white;
+}
+
+.column{
+	float:left;
+	width: 33.3%; 
+}
+
+.column a{
+	font-size: 30pt;
+}
+
+.column a:link {
+	color: lightblue;
+}
+
+.column a:visited {
+	color: lightpink;
+}
+
+img {
+	width:200px;
+}
+
+body{
+	background-image: url('image.jpg');
+}
