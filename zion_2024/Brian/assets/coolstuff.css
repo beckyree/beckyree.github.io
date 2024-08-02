@@ -18,11 +18,11 @@ p{
 	color:white;
 }
 
-.col2 a:link {
+.col2.p a:link {
 	color: lightblue;
 }
 
-.col2 a:visited {
+.col2.p a:visited {
 	color: lightpink;
 }
 
