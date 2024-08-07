@@ -1,0 +1,23 @@
+h1 {
+	text-align: center;
+	color: white;
+	font-size: 100px;
+}
+
+h2 {
+	font-size: 50px;
+	margin-top: -5px;
+}
+
+p {
+	font-size: 18pt;
+}
+
+.column {
+	float: left;
+	width: 50%;
+}
+
+body {
+	background-image: url('1.jpeg');
+}

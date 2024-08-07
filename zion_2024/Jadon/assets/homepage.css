@@ -1,0 +1,43 @@
+.row {
+	height: 300px;
+}
+
+.column {
+	width: 50%;
+	float:left;
+}
+
+.col_img {
+	width:50%;
+	float: left;
+}
+
+.col_text {
+	width: 25%;
+	float: left;
+}
+
+h1{
+	text-align: center;
+	color: white;
+	font-size: 100px;
+}
+
+img {
+	width: 300px;
+}
+
+body {
+	background-image: url('1.jpeg');
+
+}
+
+h2{
+	color: white;
+	font-size: 35px;
+}
+
+a{
+	color: white;
+
+}
