@@ -1,0 +1,46 @@
+h1{
+	font-size:50pt;
+	color:white;
+	
+}
+
+p{
+	color:white;
+	font-size:14pt;
+}
+
+img{
+	width:450px;
+	height:580px;
+}
+
+body{
+	background-image:url("disneybackgrP.jpg");
+	background-color:black;
+}
+
+.column{
+	float:left;
+	width: 50%;
+	color:white;
+	height:px;
+}
+
+.column2{
+	float: left;
+	width: 50%;
+	color:lightskyblue;
+	text-align:center;
+}
+
+.column2 a {
+	color:lightskyblue;
+	font-size:15pt;
+	
+}
+
+br{
+	content: " ";
+	display: block;
+	margin: 160px;
+}

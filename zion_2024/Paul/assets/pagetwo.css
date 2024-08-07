@@ -1,0 +1,30 @@
+h1{
+	font-size:50pt;
+	color:darkslategray;
+}
+
+body{
+	background-image:url("paperbackgr.jpg");
+}
+
+.column{
+	float:left;
+	width: 33%;
+	color:black;
+	height:px;
+	font-size:17pt;
+}
+
+img{
+	width:500px;
+}
+
+p{
+	width:490px;
+}
+
+br{
+	content: " ";
+	display: block;
+	margin: 40px;
+}
