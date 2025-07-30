@@ -1,0 +1,77 @@
+
+
+h2{
+	text-decoration-line: underline;
+	font-size: 35px;
+	color: chocolate;
+}
+
+h3{
+	text-align: center;
+	color: chocolate;
+	font-size:60px;
+	text-decoration-line:underline;
+}
+
+a{
+	text-align: center;
+	font-size: 16pt;
+	color: saddlebrown;
+}
+
+a:link{
+	text-decoration: underline;
+}
+
+body{
+	background-image: url('bonewallpaper.jpg');
+}
+
+.column{
+	width:50%;
+	float: left;
+}
+
+img{
+	width:90%;
+	/**margin-bottom: 180px;**/
+}
+
+.last {
+	margin-bottom: 150px;
+}
+
+.button{
+	border-radius: 50px;
+	padding: 35px;
+	/**width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	width: 50%;**/
+	background-color: sandybrown;
+	text-decoration: none;
+	position: absolute;
+	bottom: -540px;
+	right: 155px;
+
+}
+
+.contanier{
+	text-align: center;
+}
+
+li{
+	color: chocolate;
+	font-size: 25px;
+	text-decoration: none;
+
+}
+
+p{
+	color: chocolate;
+	font-size:25px;
+	margin-top: -10px;
+}
+
