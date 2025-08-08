@@ -1,0 +1,43 @@
+h1{
+	background-color: cadetblue;
+	padding: 25px;
+	color: darkolivegreen;
+	text-align: center;
+}
+
+h2{
+	color: white;
+}
+
+.column{
+	background-color: lightblue;
+	width: 50%;
+	float:left;
+	align-items:center;
+	display: flex;
+	flex-direction: column;
+}
+
+body{
+	background-color: cadetblue;
+}
+
+img{
+	width:33.333%;
+	height:33.333%;
+}
+
+.button {
+	width: 25%;
+	padding: 15px;
+	margin: auto;
+	background-color: floralwhite;
+	color: cadetblue;
+	border-radius: 50px;
+}
+
+a {
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+}
